@@ -9,6 +9,9 @@ class AppColors {
       Color(0xFFFEFAE0); // Light Cream background
   static const Color darkGreen = Color(0xFF283618); // Dark Green
   static const Color oliveGreen = Color(0xFF606C38); // Olive Green
+  static const Color lightGray =
+      Color.fromARGB(255, 240, 240, 240); // Light Gray
+  static const Color gray = Color(0xFFDEE2E6); // Gray
 
   // Second set of colors
   static const Color deepTeal = Color(0xFF6B9080); // Deep teal

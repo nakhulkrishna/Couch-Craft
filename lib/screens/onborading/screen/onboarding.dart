@@ -1,5 +1,6 @@
 import 'package:any_animated_button/any_animated_button.dart';
-import 'package:couchcraft/utils/bottons/buttons.dart';
+import 'package:couchcraft/screens/Home/screens/Home_screen.dart';
+
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,7 +18,17 @@ class _OnboardingState extends State<Onboarding> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [TextButton(onPressed: () {}, child: Text("Skip"))],
+        backgroundColor: Colors.white,
+        actions: [
+          TextButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomeScreen()));
+              },
+              child: const Text("Skip"))
+        ],
       ),
       body: SafeArea(
           child: Column(
@@ -62,7 +73,7 @@ class _OnboardingState extends State<Onboarding> {
                         fontSize: 15,
                         color: AppColors.oliveGreen),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   TextButton(
@@ -70,8 +81,7 @@ class _OnboardingState extends State<Onboarding> {
                       child: Text(
                         "Sign with google",
                         style: GoogleFonts.nunito(
-                            fontWeight: FontWeight.w200,
-                            color: AppColors.almostWhite),
+                            fontWeight: FontWeight.w200, color: Colors.blue),
                       ))
                 ],
               ),
