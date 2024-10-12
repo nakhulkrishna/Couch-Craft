@@ -17,7 +17,11 @@ class CB_app_widget extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           border: Border.all(color: AppColors.gray)),
-      child: IconButton(onPressed: onPreesed, icon: Icon(icons)),
+      child: IconButton(
+        onPressed: onPreesed,
+        icon: Icon(icons),
+        highlightColor: Colors.transparent,
+      ),
     );
   }
 }

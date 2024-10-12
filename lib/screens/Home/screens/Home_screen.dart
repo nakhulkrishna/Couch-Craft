@@ -1,14 +1,13 @@
+import 'package:couchcraft/screens/Home/screens/checkoutScreen.dart';
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:couchcraft/utils/widgets/CB_app_widget.dart';
 
-import 'package:couchcraft/utils/widgets/CP_newarrival.dart';
 import 'package:couchcraft/utils/widgets/CP_products_list_widgets.dart';
 import 'package:couchcraft/utils/widgets/CS_app_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -53,7 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               CB_app_widget(
                                 icons: CupertinoIcons.cube_box,
                                 onPreesed: () {
-                                  // Handle cube box icon press
+                                  Navigator.of(context).push(CupertinoPageRoute(
+                                    builder: (context) =>
+                                        const Checkoutscreen(),
+                                  ));
                                 },
                               ),
                               const SizedBox(width: 10),

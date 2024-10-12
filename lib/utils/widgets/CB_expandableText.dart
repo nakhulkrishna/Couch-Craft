@@ -53,6 +53,10 @@ class _ExpandableTextContainerState extends State<ExpandableTextContainer> {
                 'This is the expandable content! '
                 'It contains additional information that is hidden by default. '
                 'Clicking the arrow will reveal the full text. '
+                'This is the expandable content! '
+                'It contains additional information that is hidden by default. '
+                'Clicking the arrow will reveal the full text. '
+                'You can add as much text as you want here, and only part of it will be shown initially.'
                 'You can add as much text as you want here, and only part of it will be shown initially.',
                 style: const TextStyle(color: Colors.black54),
                 maxLines:

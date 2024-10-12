@@ -1,19 +1,34 @@
+
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../colors/appcolor.dart';
 
-class CB_addToCart extends StatelessWidget {
+class CB_addToCart extends StatefulWidget {
+  final int quantity;
+  final VoidCallback increment;
+  final VoidCallback decrement;
   const CB_addToCart({
     super.key,
+    required this.quantity,
+    required this.increment,
+    required this.decrement,
   });
 
+  @override
+  State<CB_addToCart> createState() => _CB_addToCartState();
+}
+
+class _CB_addToCartState extends State<CB_addToCart> {
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
+          flex: 2,
           child: Container(
             height: 60,
             width: 100,
@@ -51,6 +66,36 @@ class CB_addToCart extends StatelessWidget {
               ],
             ),
           ),
+        ),
+        const SizedBox(
+          width: 5,
+        ),
+        Expanded(
+          child: Container(
+              height: 60,
+              width: 100,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  border: Border.all(color: AppColors.darkGreen)),
+              child: IconButton(
+                  highlightColor: Colors.transparent,
+                  onPressed: widget.increment,
+                  icon: const Icon(CupertinoIcons.add))),
+        ),
+        const SizedBox(
+          width: 5,
+        ),
+        Expanded(
+          child: Container(
+              height: 60,
+              width: 100,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  border: Border.all(color: AppColors.darkGreen)),
+              child: IconButton(
+                  highlightColor: Colors.transparent,
+                  onPressed: widget.decrement,
+                  icon: const Icon(Icons.remove))),
         ),
       ],
     );

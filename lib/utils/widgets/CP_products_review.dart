@@ -1,9 +1,12 @@
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class products_preview extends StatelessWidget {
+  final int quantity;
   const products_preview({
     super.key,
+    required this.quantity,
   });
 
   @override
@@ -42,16 +45,39 @@ class products_preview extends StatelessWidget {
               width: 5,
             ),
             Expanded(
-              child: Container(
-                height: 200,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: AppColors.lightGray,
-                    borderRadius: BorderRadius.circular(15)),
-                child: Image.asset(
-                  "assets/images/new.png",
-                  fit: BoxFit.cover,
-                ),
+              child: Stack(
+                children: [
+                  Container(
+                    height: 200,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: AppColors.lightGray,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Image.asset(
+                      "assets/images/new.png",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Positioned(
+                    top: 165,
+                    left: 135,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: AppColors.darkGreen,
+                          borderRadius: BorderRadius.circular(5)),
+                      height: 25,
+                      width: 25,
+                      child: Center(
+                        child: Text(
+                          "$quantity",
+                          style: GoogleFonts.openSans(
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.almostWhite),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               ),
             )
           ],
