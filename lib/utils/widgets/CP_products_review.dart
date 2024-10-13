@@ -14,14 +14,14 @@ class products_preview extends StatelessWidget {
     return Column(
       children: [
         Container(
-          child: Image.asset(
-            "assets/images/p5-removebg-preview.png",
-          ),
           height: 200,
           width: double.infinity,
           decoration: BoxDecoration(
               color: AppColors.lightGray,
               borderRadius: BorderRadius.circular(15)),
+          child: Image.asset(
+            "assets/images/p5-removebg-preview.png",
+          ),
         ),
         const SizedBox(
           height: 5,

@@ -6,8 +6,6 @@ import 'package:couchcraft/utils/widgets/CP_products_list_widgets.dart';
 import 'package:couchcraft/utils/widgets/CS_app_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

@@ -151,7 +151,7 @@ class Newarrival_app_widgets extends StatelessWidget {
               child: Container(
             decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(15)),
-                image: const DecorationImage(
+                image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
                       "assets/images/products_2-removebg-preview.png",

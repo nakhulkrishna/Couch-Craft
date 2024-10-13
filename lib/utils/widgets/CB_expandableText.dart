@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ExpandableTextContainer extends StatefulWidget {
-  const ExpandableTextContainer({Key? key}) : super(key: key);
+  const ExpandableTextContainer({super.key});
 
   @override
   _ExpandableTextContainerState createState() =>

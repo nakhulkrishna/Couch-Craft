@@ -2,7 +2,6 @@ import 'package:couchcraft/utils/widgets/CB_app_widget.dart';
 import 'package:couchcraft/utils/widgets/CB_expandableText.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../../utils/widgets/CB_addToCart.dart';
 import '../../../utils/widgets/CP_products_review.dart';
