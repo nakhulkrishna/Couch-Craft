@@ -1,15 +1,15 @@
 buildscript {
+    ext.kotlin_version = '1.9.0'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        // Add the classpath for the Google services plugin
-        classpath 'com.google.gms:google-services:4.3.15'  // Use the latest version available
-        // If you're using Firebase Crashlytics or other Firebase tools, add their classpaths as well
-        // classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.6'
+        classpath 'com.android.tools.build:gradle:7.4.2'  // Update Gradle plugin version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+
 
 allprojects {
     repositories {
@@ -30,4 +30,4 @@ subprojects {
 // Clean task to clear the build directory
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
-}  
+}
