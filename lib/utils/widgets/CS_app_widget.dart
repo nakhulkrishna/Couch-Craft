@@ -1,6 +1,5 @@
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CS_app_widget extends StatelessWidget {
@@ -24,14 +23,13 @@ class CS_app_widget extends StatelessWidget {
           ),
           const Icon(
             CupertinoIcons.search,
-            color: AppColors.gray,
           ),
           const SizedBox(
             width: 10,
           ),
           Text(
             "Search lamp,table,etc",
-            style: GoogleFonts.nunito(color: AppColors.gray),
+            style: GoogleFonts.nunito(fontWeight: FontWeight.w500),
           )
         ],
       ),

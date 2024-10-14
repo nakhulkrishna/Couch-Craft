@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:couchcraft/screens/products/screens/productsDetails.dart';
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:couchcraft/utils/widgets/CP_newarrival.dart';
