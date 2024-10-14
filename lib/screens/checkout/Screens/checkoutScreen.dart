@@ -1,7 +1,13 @@
+import 'package:couchcraft/screens/checkout/Screens/checkoutDetails.dart';
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:couchcraft/utils/widgets/CB_app_widget.dart';
+import 'package:couchcraft/utils/widgets/CB_customeBotton.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD:lib/screens/Home/screens/checkoutScreen.dart
+=======
+import 'package:flutter/widgets.dart';
+>>>>>>> sample:lib/screens/checkout/Screens/checkoutScreen.dart
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../utils/widgets/CB_checkoutProductCard.dart';
@@ -18,6 +24,7 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Padding(
+<<<<<<< HEAD:lib/screens/Home/screens/checkoutScreen.dart
         padding: const EdgeInsets.only(bottom: 20, left: 10, right: 10),
         child: Container(
             height: 60,
@@ -54,6 +61,19 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
                 ),
               ],
             )),
+=======
+        padding: const EdgeInsets.only(left: 10, right: 10, bottom: 20),
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(
+                context,
+                CupertinoPageRoute(
+                  builder: (context) => const Checkoutdetails(),
+                ));
+          },
+          child: CB_customeButton(),
+        ),
+>>>>>>> sample:lib/screens/checkout/Screens/checkoutScreen.dart
       ),
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(80),
@@ -67,13 +87,7 @@ class _CheckoutscreenState extends State<Checkoutscreen> {
               title: const Text(
                 "Checkout",
               ),
-              actions: [
-                CB_app_widget(icons: CupertinoIcons.ellipsis, onPreesed: () {}),
-                const SizedBox(
-                  width: 10,
-                ),
-              ],
-            ),
+            )
           ],
         ),
       ),

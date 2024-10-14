@@ -1,4 +1,5 @@
-import 'package:couchcraft/screens/Home/screens/checkoutScreen.dart';
+import 'package:couchcraft/screens/checkout/Screens/checkoutScreen.dart';
+import 'package:couchcraft/screens/Home/screens/information.dart';
 import 'package:couchcraft/utils/colors/appcolor.dart';
 import 'package:couchcraft/utils/widgets/CB_app_widget.dart';
 
@@ -60,7 +61,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               CB_app_widget(
                                 icons: CupertinoIcons.line_horizontal_3,
                                 onPreesed: () {
-                                  // Handle line horizontal icon press
+                                  Navigator.of(context).push(CupertinoPageRoute(
+                                    builder: (context) => const Information(),
+                                  ));
                                 },
                               ),
                               const SizedBox(width: 10),

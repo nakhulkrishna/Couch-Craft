@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -80,7 +78,7 @@ class _CB_addToCartState extends State<CB_addToCart> {
               child: IconButton(
                   highlightColor: Colors.transparent,
                   onPressed: widget.increment,
-                  icon: const Icon(CupertinoIcons.add))),
+                  icon: const Icon(Icons.remove))),
         ),
         const SizedBox(
           width: 5,
@@ -95,7 +93,7 @@ class _CB_addToCartState extends State<CB_addToCart> {
               child: IconButton(
                   highlightColor: Colors.transparent,
                   onPressed: widget.decrement,
-                  icon: const Icon(Icons.remove))),
+                  icon: const Icon(Icons.add))),
         ),
       ],
     );

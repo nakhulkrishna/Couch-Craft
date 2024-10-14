@@ -23,14 +23,13 @@ class CS_app_widget extends StatelessWidget {
           ),
           const Icon(
             CupertinoIcons.search,
-            color: AppColors.gray,
           ),
           const SizedBox(
             width: 10,
           ),
           Text(
             "Search lamp,table,etc",
-            style: GoogleFonts.nunito(color: AppColors.gray),
+            style: GoogleFonts.nunito(fontWeight: FontWeight.w500),
           )
         ],
       ),
