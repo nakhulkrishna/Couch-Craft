@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "667010287364",
-    "project_id": "couchcraft-ea3fd",
-    "storage_bucket": "couchcraft-ea3fd.appspot.com"
+    "project_number": "12994071488",
+    "project_id": "couchcraft-3eeea",
+    "storage_bucket": "couchcraft-3eeea.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667010287364:android:196010fb70ebd7a6817251",
+        "mobilesdk_app_id": "1:12994071488:android:923e3b2ba830461dbe1625",
         "android_client_info": {
           "package_name": "com.example.couchcraft"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBEUzn1qyrlqcEZwZfV9PfKrpB5Jc8bd48"
+          "current_key": "AIzaSyBinNwgMoJ-F9Oqopr1aa_m8nza0wgPvnk"
         }
       ],
       "services": {

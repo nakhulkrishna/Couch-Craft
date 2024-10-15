@@ -132,11 +132,11 @@ class _CB_checkoutProductsCardState extends State<CB_checkoutProductsCard> {
                           ),
                           CB_smallAppWidget(
                             icon: Icons.remove,
-                            onPressed: increment,
+                            onPressed: decrement,
                           ),
                           CB_smallAppWidget(
                             icon: Icons.add,
-                            onPressed: decrement,
+                            onPressed: increment,
                           ),
                         ],
                       )

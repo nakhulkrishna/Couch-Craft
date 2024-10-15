@@ -77,7 +77,7 @@ class _CB_addToCartState extends State<CB_addToCart> {
                   border: Border.all(color: AppColors.darkGreen)),
               child: IconButton(
                   highlightColor: Colors.transparent,
-                  onPressed: widget.increment,
+                  onPressed: widget.decrement,
                   icon: const Icon(Icons.remove))),
         ),
         const SizedBox(
@@ -92,7 +92,7 @@ class _CB_addToCartState extends State<CB_addToCart> {
                   border: Border.all(color: AppColors.darkGreen)),
               child: IconButton(
                   highlightColor: Colors.transparent,
-                  onPressed: widget.decrement,
+                  onPressed: widget.increment,
                   icon: const Icon(Icons.add))),
         ),
       ],

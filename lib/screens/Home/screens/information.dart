@@ -2,8 +2,6 @@ import 'package:couchcraft/utils/widgets/CI_informationWidgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../utils/widgets/CB_app_widget.dart';
-
 class Information extends StatefulWidget {
   const Information({super.key});
 
